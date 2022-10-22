@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#9FFF4444"
     tools:context=".TestActivity">
+
     <TextView
         android:id="@+id/txtName"
         android:layout_width="match_parent"
@@ -62,4 +64,38 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etvName"
         app:layout_constraintVertical_bias="0.0" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="327dp"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnGetName">
+
+        <RadioButton
+            android:id="@+id/rb1"
+            android:layout_width="104dp"
+            android:layout_height="wrap_content"
+            android:text="Option1"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/rb2"
+            android:layout_width="97dp"
+            android:layout_height="wrap_content"
+            android:text="Option 2"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/rb3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Option 3"
+            android:textSize="16sp" />
+    </RadioGroup>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
