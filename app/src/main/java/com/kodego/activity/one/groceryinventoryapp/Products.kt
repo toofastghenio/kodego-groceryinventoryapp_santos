@@ -1,4 +1,3 @@
 package com.kodego.activity.one.groceryinventoryapp
 
-class Products {
-}
+data class Products (val imageName:Int, val itemName:String, val itemDescription:String)
