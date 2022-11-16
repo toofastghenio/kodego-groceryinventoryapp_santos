@@ -1,4 +1,4 @@
-package com.kodego.activity.one.groceryinventoryapp
+package com.kodego.activity.one.studentassistanceapp
 
 import org.junit.Test
 

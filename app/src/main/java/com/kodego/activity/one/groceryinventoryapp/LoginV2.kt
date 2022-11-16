@@ -1,23 +1,21 @@
 package com.kodego.activity.one.groceryinventoryapp
 
-
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
-import com.kodego.activity.one.groceryinventoryapp.databinding.ActivityMainBinding
+import com.kodego.activity.one.groceryinventoryapp.databinding.ActivityLoginV2Binding
 
-class MainActivity : AppCompatActivity() {
-    lateinit var binding : ActivityMainBinding
+class LoginV2 : AppCompatActivity() {
+    lateinit var binding : ActivityLoginV2Binding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityMainBinding.inflate(layoutInflater)
+        binding = ActivityLoginV2Binding.inflate(layoutInflater)
         setContentView(binding.root)
-
         //login
-        binding.btnLogin.setOnClickListener() {
-            var userName : String = binding.etvUserName.text.toString()
-            var password : String = binding.etvPassword.text.toString()
+        binding.btnLoginV2.setOnClickListener() {
+            var userName : String = binding.etvUserName2.text.toString()
+            var password : String = binding.etvPassword2.text.toString()
             checkCredential(userName, password)
         }
 
@@ -52,4 +50,3 @@ class MainActivity : AppCompatActivity() {
         }
     }
 }
-
